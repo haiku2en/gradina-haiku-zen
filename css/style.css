@@ -1,0 +1,62 @@
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f3ef;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+nav#forest-menu {
+    background-color: #ddeedd;
+    padding: 1em;
+}
+nav#forest-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+.forest-section {
+    display: none;
+    padding: 2em;
+    transition: opacity 1s ease-in-out;
+}
+.forest-section:not(.hidden) {
+    display: block;
+}
+
+/* Control Bar Styles */
+
+#control-bar {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: all 0.8s ease-in-out;
+  z-index: 1000;
+}
+#control-bar.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+#control-bar .poetic-status {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  margin-right: 1em;
+}
+#control-bar .buttons button,
+#toggle-bar {
+  margin: 0 0.25em;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+#control-bar .buttons button:hover,
+#toggle-bar:hover {
+  transform: scale(1.2);
+}

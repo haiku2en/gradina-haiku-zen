@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>📊 Stadiu Consolidat – Grădina Haiku Zen</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fdfdf7;
+      color: #2c3e50;
+      line-height: 1.6;
+      padding: 2em;
+      max-width: 960px;
+      margin: auto;
+    }
+    h1 {
+      color: #3e5c42;
+      text-align: center;
+    }
+    button {
+      margin: 1em 0;
+      padding: 0.5em 1em;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      background-color: #a7d7a7;
+      color: #2c3e50;
+      cursor: pointer;
+    }
+    .section-title {
+      font-size: 1.3em;
+      margin-top: 2em;
+      border-left: 5px solid #a6c9a6;
+      padding-left: 1em;
+      color: #3a533d;
+    }
+    ul {
+      list-style-type: '🌳 ';
+      padding-left: 1.5em;
+    }
+    ul ul {
+      list-style-type: '🍂 ';
+    }
+    .status {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .working { color: #cc7a00; }
+    .complete { color: #2c7a00; }
+    .planned { color: #888; }
+  </style>
+  <script>
+    function refreshStatus() {
+      location.reload();
+    }
+  </script>
+</head>
+<body>
+  <h1>📊 Stadiu Consolidat – Grădina Haiku Zen</h1>
+  <p><em>Actualizat: 25 martie 2025, ora 20:00 CET</em></p>
+  <button onclick="refreshStatus()">🔄 Reîncarcă raportul</button>
+
+  <div class="section-title">✅ FINALIZAT</div>
+  <ul>
+    <li>Structură generală <span class="status complete">[Complet]</span>
+      <ul>
+        <li>HTML, CSS, JS modular</li>
+        <li>Organizare pe foldere + manifest</li>
+      </ul>
+    </li>
+    <li>Meniu de Păduri <span class="status complete">[Complet]</span>
+      <ul>
+        <li>Tranziții fade</li>
+        <li>Stare păstrată între sesiuni</li>
+      </ul>
+    </li>
+    <li>Bara de control poetică <span class="status complete">[Complet]</span>
+      <ul>
+        <li>Microtexte poetice</li>
+        <li>Toggle + animație nor Zen</li>
+      </ul>
+    </li>
+    <li>Documentație + status HTML <span class="status complete">[Complet]</span>
+      <ul>
+        <li>docs.html poetic</li>
+        <li>status.html cu buton din interfață</li>
+      </ul>
+    </li>
+    <li>Scripturi automate GitHub <span class="status complete">[Complet]</span>
+      <ul>
+        <li>setup, deploy, reactualizare totală</li>
+        <li>Script unificat final</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="section-title">🔄 ÎN CURS DE LUCRU</div>
+  <ul>
+    <li>🎧 Sunet ambiental multi-strat <span class="status working">[În lucru]</span>
+      <ul>
+        <li>Păsări, Vânt, Apă, Foc, Clopoței</li>
+        <li>Control global (buton 🔊)</li>
+        <li>Volum reglabil + `localStorage`</li>
+        <li>Player în fundal (5 canale audio)</li>
+        <li>Testare pe mobil și desktop</li>
+      </ul>
+    </li>
+    <li>🌸 Floare animată <span class="status working">[În lucru]</span>
+      <ul>
+        <li>Vizibilă doar când sunetul este activ</li>
+        <li>Animație puls simplă, ciclică</li>
+        <li>Tooltip poetic la hover</li>
+      </ul>
+    </li>
+    <li>🧘 Mod Zen automat <span class="status working">[În lucru]</span>
+      <ul>
+        <li>Dispare UI după 60s inactivitate</li>
+        <li>Revenire la mișcare / click</li>
+        <li>Poate fi activat manual din meniu</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="section-title">🔜 PLANIFICATE</div>
+  <ul>
+    <li>✍️ Editare Live + Salvare <span class="status planned">[Planificat]</span>
+      <ul>
+        <li>Dublu-click → editare</li>
+        <li>Salvare automată în localStorage</li>
+      </ul>
+    </li>
+    <li>📤 Export / Import JSON <span class="status planned">[Planificat]</span>
+      <ul>
+        <li>Buton export + descărcare `.json`</li>
+        <li>Buton import + restaurare completă</li>
+      </ul>
+    </li>
+    <li>🍂 Frunze animate + Haiku <span class="status planned">[Planificat]</span>
+      <ul>
+        <li>Animații pe canvas / SVG</li>
+        <li>Haiku-uri aleatorii în frunze</li>
+        <li>Sunet koto la apariția unei frunze haiku</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>

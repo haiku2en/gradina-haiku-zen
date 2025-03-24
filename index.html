@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Grădina Haiku Zen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="forest-menu">
+        <ul>
+            <li data-forest="arta">Pădurea Artei Sacre</li>
+            <li data-forest="vindecare">Pădurea Vindecării</li>
+            <li data-forest="plante">Pădurea Plantei Înțelepte</li>
+            <li data-forest="sunet">Pădurea Sunetului Tăcut</li>
+            <li data-forest="cuvant">Pădurea Cuvântului Interior</li>
+        </ul>
+    </nav>
+    <main id="garden-container">
+        <section id="arta" class="forest-section">[Conținut Arta Sacră]</section>
+        <section id="vindecare" class="forest-section hidden">[Conținut Vindecare]</section>
+        <section id="plante" class="forest-section hidden">[Conținut Plante]</section>
+        <section id="sunet" class="forest-section hidden">[Conținut Sunet]</section>
+        <section id="cuvant" class="forest-section hidden">[Conținut Cuvânt]</section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- Control Bar -->
+
+<div id="control-bar" class="visible">
+  <span class="poetic-status">🌱 Grădina ta este vie.</span>
+  <div class="buttons">
+    <button id="toggle-sound" title="Ascultă șoapta grădinii.">🔊</button>
+    <button id="export-json" title="Plantează o amintire în lume.">💾</button>
+    <button id="import-json" title="Adu înapoi o grădină visată.">📥</button>
+    <button id="reset-garden" title="Răsădește din nou începutul.">🔄</button>
+    <button id="toggle-zen" title="Rămâi doar cu respirația.">🌌</button>
+  </div>
+  <button onclick="window.open('status.html')" title="Vezi progresul Grădinii.">📊</button>
+    <button id="toggle-bar" title="🌾 Grădina tace, dar e aici.">☰</button>
+</div>
